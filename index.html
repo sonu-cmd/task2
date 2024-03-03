@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="stopwatch">
+      <h1> STOPWATCH</h1>
+      <div class="circle">
+        <span class="time" id="display">00:00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="buttonPlay" id="playButton">
+          <img src="icons/play-button.svg" />
+        </button>
+
+        <button class="buttonPlay" id="pauseButton">
+          <img src="icons/pause-button.svg" />
+        </button>
+
+        <button class="buttonReset" id="resetButton">
+          <img src="icons/reset-button.svg" />
+        </button>
+
+        <!-- Add a lap button -->
+        <button class="buttonLap" id="lapButton">
+          <img src="icons/flag-.svg" >
+        </button>
+      </div>
+
+      <!-- Add a list to display lap times -->
+      <ul id="lapList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
